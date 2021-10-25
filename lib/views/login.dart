@@ -60,7 +60,7 @@ class LoginState extends State<Login>{
                 ElevatedButton(
                   onPressed: () {
                     if(email == 'teste@gmail.com' && senha == '123'){
-                      Navigator.of(context).pushNamed('/home');
+                      Navigator.of(context).pushNamed('/cursos');
                     }
                   },
                   child: const Text('Entrar'),

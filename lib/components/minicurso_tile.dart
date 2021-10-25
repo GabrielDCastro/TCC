@@ -8,7 +8,7 @@ class MiniCursosTile extends StatelessWidget{
   const MiniCursosTile(this.miniCursos);
   
   @override
-  Widget build(BuildContext){
+  Widget build(BuildContext context){
     final imagem = CircleAvatar(backgroundImage: NetworkImage(miniCursos.imagemUrl));
     return ListTile(
       leading: imagem,
@@ -21,7 +21,11 @@ class MiniCursosTile extends StatelessWidget{
             IconButton( 
               icon: Icon(Icons.edit),
               color: Colors.amber,
-              onPressed: (){},
+              onPressed: (){
+                Navigator.of(context).pushNamed(
+                '/minicursoform',
+                arguments: miniCursos,);
+              },
               ),
               IconButton( 
               icon: Icon(Icons.delete),

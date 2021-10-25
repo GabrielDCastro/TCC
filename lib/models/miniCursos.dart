@@ -7,6 +7,9 @@ class MiniCurso{
   final String topicos;
   final String cargaHoraria;
   final String imagemUrl;
+  final String dataInicio;
+  final String dataFim;
+  final bool arquivado=false;
 
   const MiniCurso({
     required this.id,
@@ -15,5 +18,7 @@ class MiniCurso{
     required this.topicos,
     required this.cargaHoraria,
     required this.imagemUrl,
+    required this.dataInicio,
+    required this.dataFim,
   });
 }

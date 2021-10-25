@@ -36,6 +36,8 @@ class MiniCursos with ChangeNotifier{
     topicos: miniCurso.topicos,
     cargaHoraria: miniCurso.cargaHoraria,
     imagemUrl: miniCurso.imagemUrl,
+    dataInicio: miniCurso.dataInicio,
+    dataFim: miniCurso.dataFim,
   ));
     notifyListeners();
   }

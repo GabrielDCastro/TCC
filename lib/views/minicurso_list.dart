@@ -61,13 +61,15 @@ class MiniCursoList extends StatelessWidget{
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.add),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed('/minicursoform');
+            },
           ),
         ],
         ),
         body: ListView.builder(
           itemCount: MiniCurso.count,
-          itemBuilder: (ctx, i)=> MiniCursosTile(MiniCurso.byIndex(i)),
+          itemBuilder: (ctx, i)=> MiniCursosTile(MiniCurso.all.elementAt(i)),
         ),
     );
   }
